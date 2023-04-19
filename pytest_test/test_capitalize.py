@@ -8,9 +8,6 @@ def call_func(x):
 def test_answer_false():
     assert call_func("echo 1") == 0
 
-def test_answer_false():
-    assert call_func("echo 1") == 0
-
 def test_answer_pass():
     assert call_func("ls -la") == 0
 
