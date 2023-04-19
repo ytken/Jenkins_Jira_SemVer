@@ -1,5 +1,4 @@
 # test_capitalize.py
-
 import pytest
 import subprocess
 
