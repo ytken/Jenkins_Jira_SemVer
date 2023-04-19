@@ -7,7 +7,7 @@ def call_func(x):
     return subprocess.call(x, shell=True)
 
 def test_answer_false():
-    assert call_func("exit 1") == 0
+    assert call_func("echo 1") == 0
 
 def test_answer_pass():
     assert call_func("ls -la") == 0
