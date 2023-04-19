@@ -1,3 +1,13 @@
+## 1.0.0 (2023-04-19)
+
+### BREAKING CHANGE
+
+- One failure inserted
+
+### Feat
+
+- **test**: insert failure
+
 ## 0.2.1 (2023-04-19)
 
 ### Fix
