@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  core:
+    restart: unless-stopped
+    container_name: jira
+    image: dchevell/jira-core
+    ports:
+      - 7070:8080
+    volumes:
+      - ./jira/core:/var/atlassian/application-data/jira
+
+  jenkins:
+    restart: unless-stopped
+    container_name: jenkins
+    image: jenkins-basic
+    ports:
+      - 8080:8080
+    volumes:
+      - /home/aovchinnikova/apps/pytest_test:/app
+      - jenkins-basic:/home/jenkins/data/
+
+volumes:
+  jenkins-basic:
+
+
